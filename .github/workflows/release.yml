@@ -1,0 +1,36 @@
+name: Release Registry
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'registry.json'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  publish-release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Validate JSON
+        run: |
+          python3 -m json.tool registry.json > /dev/null
+          echo "registry.json syntax is valid."
+
+      - name: Publish Rolling Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: latest
+          name: "Latest Registry"
+          body: "Automated rolling release containing the latest registry.json"
+          files: registry.json
+          make_latest: true
+          prerelease: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
