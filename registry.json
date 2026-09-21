@@ -6,8 +6,8 @@
     "authorGithub": "https://github.com/plexescor",
     "description": "Cross-platform native extension and store manager UI for HPR.",
     "longDescription": "### HPR Store\n\nA cross-platform native extension and store manager UI for **HPR** (Human Pattern Recorder), built with **C++**, **Slint**, **Lua**, and **libarchive**.\n\nIt allows browsing, filtering, installing, and updating extensions and themes for HPR directly from inside the HPR application interface.",
-    "version": "0.3",
-    "downloadUrl": "https://github.com/plexescor/HPR-Store/releases/download/v0.3/HPR-Store.zip",
+    "version": "0.4",
+    "downloadUrl": "https://github.com/plexescor/HPR-Store/releases/download/v0.4/HPR-Store.zip",
     "sourceUrl": "https://github.com/plexescor/HPR-Store",
     "type": "EXTENSION",
     "tags": [
@@ -22,11 +22,12 @@
       "0.9.7",
       "0.9.8",
       "0.9.9",
-      "0.9.10"
+      "0.9.10",
+      "0.9.11"
     ],
-    "downloadCount": 9,
+    "downloadCount": 10,
     "starCount": 1,
-    "lastUpdated": "2026-09-20"
+    "lastUpdated": "2026-09-21"
   },
   {
     "id": "hpr-idle-detection",
@@ -35,8 +36,8 @@
     "authorGithub": "https://github.com/plexescor",
     "description": "Monitors system idle status and automatically pauses/resumes HPR tracking when the user goes idle.",
     "longDescription": "### HPR Idle Detection Extension\n\nA native **C++ & Lua** extension for HPR that monitors system idle status and automatically manages tracking lifecycle events.\n\n### Platform & Desktop Support\n- **Windows**: \u2705 Supported (Win32 `GetLastInputInfo`)\n- **Linux (GNOME)**: \u2705 Supported (Mutter D-Bus `org.gnome.Mutter.IdleMonitor`)\n- **Linux (Cinnamon)**: \u2705 Supported (Muffin D-Bus `org.cinnamon.Muffin.IdleMonitor`)\n- **Linux (KDE Plasma 6)**: \u2705 Supported (Wayland `ext-idle-notify-v1`)\n- **Linux (Wayland)**: \u2705 Supported (Hyprland, niri, Sway via `ext-idle-notify-v1`)\n- **Linux (X11)**: \u274c Not Supported\n\n### Features & How It Works\n- **Auto Pause & Resume**: Automatically calls `HPR.stopTracking()` when system idle time exceeds the threshold, and calls `HPR.startTracking()` when user activity resumes.\n- **Configurable Threshold**: Configured via `idle_detection_config.csv` (default: 5 minutes / 300000 ms).\n- **Auto-Config Creation**: If missing on startup, auto-creates the config file with the default threshold.",
-    "version": "0.4",
-    "downloadUrl": "https://github.com/plexescor/HPR-Idle-Detection-Extension/releases/download/v0.4/HPR-Idle-Detection-Extension.zip",
+    "version": "0.5",
+    "downloadUrl": "https://github.com/plexescor/HPR-Idle-Detection-Extension/releases/download/v0.5/HPR-Idle-Detection-Extension.zip",
     "sourceUrl": "https://github.com/plexescor/HPR-Idle-Detection-Extension",
     "type": "EXTENSION",
     "tags": [
@@ -51,11 +52,12 @@
       "0.9.7", 
       "0.9.8",
       "0.9.9",
-      "0.9.10"
+      "0.9.10",
+      "0.9.11"
     ],
-    "downloadCount": 15,
+    "downloadCount": 16,
     "starCount": 1,
-    "lastUpdated": "2026-09-20"
+    "lastUpdated": "2026-09-21"
   } 
 
 ]
