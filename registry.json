@@ -6,8 +6,8 @@
     "authorGithub": "https://github.com/plexescor",
     "description": "Cross-platform native extension and store manager UI for HPR.",
     "longDescription": "### HPR Store\n\nA cross-platform native extension and store manager UI for **HPR** (Human Pattern Recorder), built with **C++**, **Slint**, **Lua**, and **libarchive**.\n\nIt allows browsing, filtering, installing, and updating extensions and themes for HPR directly from inside the HPR application interface.",
-    "version": "0.4",
-    "downloadUrl": "https://github.com/plexescor/HPR-Store/releases/download/v0.4/HPR-Store.zip",
+    "version": "0.4.1",
+    "downloadUrl": "https://github.com/plexescor/HPR-Store/releases/download/v0.4.1/HPR-Store.zip",
     "sourceUrl": "https://github.com/plexescor/HPR-Store",
     "type": "EXTENSION",
     "tags": [
@@ -25,9 +25,9 @@
       "0.9.10",
       "0.9.11"
     ],
-    "downloadCount": 10,
+    "downloadCount": 28,
     "starCount": 1,
-    "lastUpdated": "2026-09-21"
+    "lastUpdated": "2026-09-24"
   },
   {
     "id": "hpr-idle-detection",
